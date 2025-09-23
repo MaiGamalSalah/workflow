@@ -1,0 +1,113 @@
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.15.xsd">
+
+    <changeSet id="1" author="mai">
+        <createTable tableName="instructors">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+    <changeSet id="2" author="mai">
+        <createTable tableName="students">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="first_name" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(255)"/>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+    <changeSet id="3" author="mai">
+        <createTable tableName="courses">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="title" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(500)"/>
+            <column name="instructor_id" type="BIGINT"/>
+        </createTable>
+
+        <addForeignKeyConstraint
+                constraintName="fk_courses_instructors"
+                baseTableName="courses" baseColumnNames="instructor_id"
+                referencedTableName="instructors" referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="4" author="mai">
+        <createTable tableName="student_courses">
+            <column name="student_id" type="BIGINT"/>
+            <column name="course_id" type="BIGINT"/>
+        </createTable>
+
+        <addPrimaryKey tableName="student_courses" columnNames="student_id, course_id"/>
+
+        <addForeignKeyConstraint
+                constraintName="fk_student_courses_students"
+                baseTableName="student_courses" baseColumnNames="student_id"
+                referencedTableName="students" referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint
+                constraintName="fk_student_courses_courses"
+                baseTableName="student_courses" baseColumnNames="course_id"
+                referencedTableName="courses" referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="5" author="mai">
+        <insert tableName="instructors">
+            <column name="name" value="Dr. Ali"/>
+            <column name="email" value="ali@example.com"/>
+        </insert>
+
+        <insert tableName="students">
+            <column name="first_name" value="Mona"/>
+            <column name="last_name" value="Ahmed"/>
+            <column name="email" value="mona@example.com"/>
+        </insert>
+
+        <insert tableName="courses">
+            <column name="title" value="Spring Boot Basics"/>
+            <column name="description" value="Intro to Spring Boot"/>
+            <column name="instructor_id" value="1"/>
+        </insert>
+    </changeSet>
+
+    <changeSet id="6" author="mai">
+        <createTable tableName="users">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="username" type="VARCHAR(100)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="email" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+            <column name="password" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="role" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="enabled" type="BOOLEAN" defaultValueBoolean="true"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
