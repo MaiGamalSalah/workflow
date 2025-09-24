@@ -1,0 +1,177 @@
+2025-09-23 00:01:13.598  INFO --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23 00:01:13.613  INFO --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23 00:01:13.622  INFO --- [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23 00:01:13.626  INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-23 00:01:13.638  INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-23 00:01:24.673  INFO --- [           main] com.example.Mai.sProject.Application     : Starting Application using Java 23.0.1 with PID 10244 (C:\Users\DELL\Desktop\CrudSpringProjectWithHandling\project one\API-TASK1\target\classes started by DELL in C:\Users\DELL\Desktop\CrudSpringProjectWithHandling\project one\API-TASK1)
+2025-09-23 00:01:24.676 DEBUG --- [           main] com.example.Mai.sProject.Application     : Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-23 00:01:24.677  INFO --- [           main] com.example.Mai.sProject.Application     : No active profile set, falling back to 1 default profile: "default"
+2025-09-23 00:01:26.803  INFO --- [           main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23 00:01:26.912  INFO --- [           main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 4 JPA repository interfaces.
+2025-09-23 00:01:27.570  INFO --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23 00:01:27.585  INFO --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-23 00:01:27.585  INFO --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23 00:01:27.585  INFO --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-23 00:01:27.656  INFO --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-23 00:01:27.656  INFO --- [           main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2875 ms
+2025-09-23 00:01:27.996  INFO --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-23 00:01:28.183  INFO --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ce7fdf
+2025-09-23 00:01:28.186  INFO --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-23 00:01:29.196  INFO --- [           main] liquibase.changelog                      : Reading from testtt.databasechangelog
+2025-09-23 00:01:29.278  INFO --- [           main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-23 00:01:29.278  INFO --- [           main] liquibase.changelog                      : Reading from testtt.databasechangelog
+2025-09-23 00:01:29.298  INFO --- [           main] liquibase.util                           : UPDATE SUMMARY
+2025-09-23 00:01:29.298  INFO --- [           main] liquibase.util                           : Run:                          0
+2025-09-23 00:01:29.298  INFO --- [           main] liquibase.util                           : Previously run:               6
+2025-09-23 00:01:29.298  INFO --- [           main] liquibase.util                           : Filtered out:                 0
+2025-09-23 00:01:29.298  INFO --- [           main] liquibase.util                           : -------------------------------
+2025-09-23 00:01:29.298  INFO --- [           main] liquibase.util                           : Total change sets:            6
+2025-09-23 00:01:29.298  INFO --- [           main] liquibase.util                           : Update summary generated
+2025-09-23 00:01:29.303  INFO --- [           main] liquibase.command                        : Command execution complete
+2025-09-23 00:01:30.770  INFO --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23 00:01:30.832  INFO --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-23 00:01:30.882  INFO --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23 00:01:31.253  INFO --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23 00:01:31.309  WARN --- [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-09-23 00:01:31.340  INFO --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23 00:01:32.528  INFO --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23 00:01:32.533  INFO --- [           main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23 00:01:32.928 DEBUG --- [           main] c.e.M.s.s.JWT.JWTAuthenticationFilter    : Filter 'JWTAuthenticationFilter' configured for use
+2025-09-23 00:01:33.008  INFO --- [           main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-23 00:01:33.009  WARN --- [           main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-23 00:01:33.061  INFO --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-23 00:01:34.167  WARN --- [           main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23 00:01:34.822  INFO --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2025-09-23 00:01:35.464  INFO --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2025-09-23 00:01:35.490  INFO --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-23 00:01:35.509  INFO --- [           main] com.example.Mai.sProject.Application     : Started Application in 11.962 seconds (process running for 13.12)
+2025-09-23 00:01:43.858  INFO --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23 00:01:43.858  INFO --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23 00:01:43.863  INFO --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-09-23 00:50:53.663  INFO --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23 00:50:53.697  INFO --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23 00:50:53.747  INFO --- [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23 00:50:53.791  INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-23 00:50:53.804  INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-23 00:50:59.319  INFO --- [           main] com.example.Mai.sProject.Application     : Starting Application using Java 23.0.1 with PID 17712 (C:\Users\DELL\Desktop\CrudSpringProjectWithHandling\project one\API-TASK1\target\classes started by DELL in C:\Users\DELL\Desktop\CrudSpringProjectWithHandling\project one\API-TASK1)
+2025-09-23 00:50:59.321 DEBUG --- [           main] com.example.Mai.sProject.Application     : Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-23 00:50:59.323  INFO --- [           main] com.example.Mai.sProject.Application     : No active profile set, falling back to 1 default profile: "default"
+2025-09-23 00:51:01.109  INFO --- [           main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23 00:51:01.216  INFO --- [           main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 4 JPA repository interfaces.
+2025-09-23 00:51:01.986  INFO --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23 00:51:02.000  INFO --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-23 00:51:02.002  INFO --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23 00:51:02.002  INFO --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-23 00:51:02.080  INFO --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-23 00:51:02.080  INFO --- [           main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2651 ms
+2025-09-23 00:51:02.415  INFO --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-23 00:51:02.614  INFO --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@285bf5ac
+2025-09-23 00:51:02.616  INFO --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-23 00:51:03.680  INFO --- [           main] liquibase.changelog                      : Reading from testtt.databasechangelog
+2025-09-23 00:51:03.820  INFO --- [           main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-23 00:51:03.824  INFO --- [           main] liquibase.changelog                      : Reading from testtt.databasechangelog
+2025-09-23 00:51:03.847  INFO --- [           main] liquibase.util                           : UPDATE SUMMARY
+2025-09-23 00:51:03.848  INFO --- [           main] liquibase.util                           : Run:                          0
+2025-09-23 00:51:03.848  INFO --- [           main] liquibase.util                           : Previously run:               6
+2025-09-23 00:51:03.848  INFO --- [           main] liquibase.util                           : Filtered out:                 0
+2025-09-23 00:51:03.848  INFO --- [           main] liquibase.util                           : -------------------------------
+2025-09-23 00:51:03.848  INFO --- [           main] liquibase.util                           : Total change sets:            6
+2025-09-23 00:51:03.851  INFO --- [           main] liquibase.util                           : Update summary generated
+2025-09-23 00:51:03.853  INFO --- [           main] liquibase.command                        : Command execution complete
+2025-09-23 00:51:05.296  INFO --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23 00:51:05.365  INFO --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-23 00:51:05.411  INFO --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23 00:51:05.728  INFO --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23 00:51:05.784  WARN --- [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-09-23 00:51:05.806  INFO --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23 00:51:07.261  INFO --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23 00:51:07.270  INFO --- [           main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23 00:51:07.736 DEBUG --- [           main] c.e.M.s.s.JWT.JWTAuthenticationFilter    : Filter 'JWTAuthenticationFilter' configured for use
+2025-09-23 00:51:07.858  INFO --- [           main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-23 00:51:07.860  WARN --- [           main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-23 00:51:07.933  INFO --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-23 00:51:09.006  WARN --- [           main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23 00:51:09.629  INFO --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2025-09-23 00:51:10.176  INFO --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2025-09-23 00:51:10.202  INFO --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-23 00:51:10.221  INFO --- [           main] com.example.Mai.sProject.Application     : Started Application in 11.972 seconds (process running for 13.21)
+2025-09-23 00:51:13.228  INFO --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23 00:51:13.229  INFO --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23 00:51:13.233  INFO --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-09-23 00:54:39.303  INFO --- [http-nio-8080-exec-4] c.e.Mai.sProject.Services.AuthService    : Attempting to register user with username: adminn
+2025-09-23 00:54:39.504  WARN --- [http-nio-8080-exec-4] c.e.Mai.sProject.Services.AuthService    : Registration failed - Username 'adminn' is already taken
+2025-09-23 01:05:55.817  INFO --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-23 01:05:55.827  INFO --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-23 01:05:55.841  INFO --- [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23 01:05:55.846  INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-23 01:05:55.869  INFO --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-23 01:06:00.795  INFO --- [           main] com.example.Mai.sProject.Application     : Starting Application using Java 23.0.1 with PID 2816 (C:\Users\DELL\Desktop\CrudSpringProjectWithHandling\project one\API-TASK1\target\classes started by DELL in C:\Users\DELL\Desktop\CrudSpringProjectWithHandling\project one\API-TASK1)
+2025-09-23 01:06:00.798 DEBUG --- [           main] com.example.Mai.sProject.Application     : Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-23 01:06:00.800  INFO --- [           main] com.example.Mai.sProject.Application     : No active profile set, falling back to 1 default profile: "default"
+2025-09-23 01:06:02.783  INFO --- [           main] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-23 01:06:02.903  INFO --- [           main] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 4 JPA repository interfaces.
+2025-09-23 01:06:03.608  INFO --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-23 01:06:03.623  INFO --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-23 01:06:03.626  INFO --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-23 01:06:03.626  INFO --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-23 01:06:03.707  INFO --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-23 01:06:03.707  INFO --- [           main] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2798 ms
+2025-09-23 01:06:04.117  INFO --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-23 01:06:04.346  INFO --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74ce7fdf
+2025-09-23 01:06:04.349  INFO --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-23 01:06:05.518  INFO --- [           main] liquibase.changelog                      : Reading from testtt.databasechangelog
+2025-09-23 01:06:05.608  INFO --- [           main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-23 01:06:05.611  INFO --- [           main] liquibase.changelog                      : Reading from testtt.databasechangelog
+2025-09-23 01:06:05.626  INFO --- [           main] liquibase.util                           : UPDATE SUMMARY
+2025-09-23 01:06:05.627  INFO --- [           main] liquibase.util                           : Run:                          0
+2025-09-23 01:06:05.627  INFO --- [           main] liquibase.util                           : Previously run:               6
+2025-09-23 01:06:05.627  INFO --- [           main] liquibase.util                           : Filtered out:                 0
+2025-09-23 01:06:05.627  INFO --- [           main] liquibase.util                           : -------------------------------
+2025-09-23 01:06:05.627  INFO --- [           main] liquibase.util                           : Total change sets:            6
+2025-09-23 01:06:05.630  INFO --- [           main] liquibase.util                           : Update summary generated
+2025-09-23 01:06:05.632  INFO --- [           main] liquibase.command                        : Command execution complete
+2025-09-23 01:06:07.071  INFO --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-23 01:06:07.133  INFO --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-23 01:06:07.200  INFO --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-23 01:06:07.582  INFO --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-23 01:06:07.643  WARN --- [           main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-09-23 01:06:07.665  INFO --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-23 01:06:08.986  INFO --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-23 01:06:08.993  INFO --- [           main] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-23 01:06:09.438 DEBUG --- [           main] c.e.M.s.s.JWT.JWTAuthenticationFilter    : Filter 'JWTAuthenticationFilter' configured for use
+2025-09-23 01:06:09.529  INFO --- [           main] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-09-23 01:06:09.529  WARN --- [           main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-09-23 01:06:09.582  INFO --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-23 01:06:10.585  WARN --- [           main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-23 01:06:11.140  INFO --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoints beneath base path '/actuator'
+2025-09-23 01:06:11.841  INFO --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2025-09-23 01:06:11.868  INFO --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-23 01:06:11.889  INFO --- [           main] com.example.Mai.sProject.Application     : Started Application in 12.236 seconds (process running for 13.388)
+2025-09-23 01:06:13.173  INFO --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-23 01:06:13.174  INFO --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-23 01:06:13.177  INFO --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-09-23 01:06:18.112  INFO --- [http-nio-8080-exec-3] c.e.Mai.sProject.Services.AuthService    : Attempting to register user with username: adminn
+2025-09-23 01:06:18.274  WARN --- [http-nio-8080-exec-3] c.e.Mai.sProject.Services.AuthService    : Registration failed - Username 'adminn' is already taken
+2025-09-23 01:08:47.370  INFO --- [http-nio-8080-exec-9] c.e.Mai.sProject.Services.AuthService    : Attempting to register user with username: adminnn
+2025-09-23 01:08:47.672  INFO --- [http-nio-8080-exec-9] c.e.Mai.sProject.Services.AuthService    : User 'adminnn' registered successfully with role 'USER'
