@@ -13,9 +13,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Debug Docker Username
-        run: echo "Using Docker username: ${{ secrets.DOCKER_USERNAME }}"
-
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
@@ -25,11 +22,16 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-      - name: Login to DockerHub
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+        #      - name: Run Tests
+        #        run: mvn test
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mai-sproject:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mai-sproject .
+
+      - name: Login to DockerHub
+        run: |
+          echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Push to DockerHub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/mai-sproject:latest
+
