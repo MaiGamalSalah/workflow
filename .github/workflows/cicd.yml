@@ -22,8 +22,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-        #      - name: Run Tests
-        #        run: mvn test
+
 
       - name: Build Docker image
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/mai-sproject .
