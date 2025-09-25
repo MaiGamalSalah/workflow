@@ -13,6 +13,9 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Debug Docker Username
+        run: echo "Using Docker username: ${{ secrets.DOCKER_USERNAME }}"
+
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
